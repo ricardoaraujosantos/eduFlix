@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EduFlix - Sua plataforma de cursos e formações online">
+    <title>EduFlix | Aprenda com os melhores cursos online</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <span class="logo__text">Edu</span><span class="logo__highlight">Flix</span>
+            </a>
+            
+            <nav class="header__nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--active">
+                            <i class="fas fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#cursos" class="nav__link">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Cursos</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#formacoes" class="nav__link">
+                            <i class="fas fa-route"></i>
+                            <span>Formações</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#categorias" class="nav__link">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Categorias</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header__actions">
+                <button class="btn btn--icon" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="login.html" class="btn btn--primary" id="btnAuth">
+                    <i class="fas fa-user"></i>
+                    <span id="authText">Entrar</span>
+                </a>
+                <button class="header__menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__background">
+                <div class="hero__gradient"></div>
+                <div class="hero__particles" id="particles"></div>
+            </div>
+            
+            <div class="hero__content">
+                <span class="hero__badge">
+                    <i class="fas fa-fire"></i>
+                    Curso em Destaque
+                </span>
+                
+                <h1 class="hero__title">
+                    Formação Full Stack Developer
+                </h1>
+                
+                <p class="hero__description">
+                    Domine as principais tecnologias do mercado: React, Node.js, TypeScript e muito mais. 
+                    Aprenda com projetos práticos e construa um portfólio impressionante para sua carreira.
+                </p>
+                
+                <div class="hero__meta">
+                    <span class="meta__item">
+                        <i class="fas fa-clock"></i>
+                        120+ horas
+                    </span>
+                    <span class="meta__item">
+                        <i class="fas fa-video"></i>
+                        450+ aulas
+                    </span>
+                    <span class="meta__item">
+                        <i class="fas fa-star"></i>
+                        4.9 (2.5k avaliações)
+                    </span>
+                    <span class="meta__item">
+                        <i class="fas fa-users"></i>
+                        15k+ alunos
+                    </span>
+                </div>
+                
+                <div class="hero__actions">
+                    <button class="btn btn--large btn--accent" id="btnAssistir">
+                        <i class="fas fa-play"></i>
+                        Começar Agora
+                    </button>
+                    <button class="btn btn--large btn--outline" id="btnInfo">
+                        <i class="fas fa-info-circle"></i>
+                        Ver Conteúdo
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero__visual">
+                <div class="hero__card">
+                    <div class="card__header">
+                        <span class="card__icon">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <span class="card__badge">Pro</span>
+                    </div>
+                    <div class="card__progress">
+                        <div class="progress__bar" style="--progress: 65%"></div>
+                    </div>
+                    <span class="card__label">65% Concluído</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stats__container">
+                <div class="stat__item">
+                    <span class="stat__number" data-count="500">0</span>
+                    <span class="stat__label">Cursos</span>
+                </div>
+                <div class="stat__item">
+                    <span class="stat__number" data-count="50000">0</span>
+                    <span class="stat__label">Alunos</span>
+                </div>
+                <div class="stat__item">
+                    <span class="stat__number" data-count="200">0</span>
+                    <span class="stat__label">Instrutores</span>
+                </div>
+                <div class="stat__item">
+                    <span class="stat__number" data-count="98">0</span>
+                    <span class="stat__label">% Satisfação</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--courses" id="cursos">
+            <div class="section__header">
+                <h2 class="section__title">
+                    <i class="fas fa-fire-alt"></i>
+                    Cursos Populares
+                </h2>
+                <a href="#" class="section__link">
+                    Ver todos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="carousel" id="carousel-popular">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel__track">
+                    <article class="course-card">
+                        <div class="course-card__image">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=225&fit=crop" alt="React do Zero ao Avançado" loading="lazy">
+                            <span class="course-card__badge course-card__badge--new">Novo</span>
+                            <div class="course-card__overlay">
+                                <button class="btn btn--play">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-card__content">
+                            <span class="course-card__category">Desenvolvimento Web</span>
+                            <h3 class="course-card__title">React do Zero ao Avançado</h3>
+                            <div class="course-card__meta">
+                                <span><i class="fas fa-clock"></i> 40h</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="course-card">
+                        <div class="course-card__image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=225&fit=crop" alt="Python para Data Science" loading="lazy">
+                            <span class="course-card__badge course-card__badge--popular">Popular</span>
+                            <div class="course-card__overlay">
+                                <button class="btn btn--play">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-card__content">
+                            <span class="course-card__category">Data Science</span>
+                            <h3 class="course-card__title">Python para Data Science</h3>
+                            <div class="course-card__meta">
+                                <span><i class="fas fa-clock"></i> 55h</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="course-card">
+                        <div class="course-card__image">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=225&fit=crop" alt="Cybersecurity Essentials" loading="lazy">
+                            <div class="course-card__overlay">
+                                <button class="btn btn--play">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-card__content">
+                            <span class="course-card__category">Segurança</span>
+                            <h3 class="course-card__title">Cybersecurity Essentials</h3>
+                            <div class="course-card__meta">
+                                <span><i class="fas fa-clock"></i> 35h</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="course-card">
+                        <div class="course-card__image">
+                            <img src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=400&h=225&fit=crop" alt="UI/UX Design Completo" loading="lazy">
+                            <span class="course-card__badge course-card__badge--bestseller">Mais Vendido</span>
+                            <div class="course-card__overlay">
+                                <button class="btn btn--play">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-card__content">
+                            <span class="course-card__category">Design</span>
+                            <h3 class="course-card__title">UI/UX Design Completo</h3>
+                            <div class="course-card__meta">
+                                <span><i class="fas fa-clock"></i> 45h</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="course-card">
+                        <div class="course-card__image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=225&fit=crop" alt="Machine Learning" loading="lazy">
+                            <div class="course-card__overlay">
+                                <button class="btn btn--play">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-card__content">
+                            <span class="course-card__category">IA & ML</span>
+                            <h3 class="course-card__title">Machine Learning A-Z</h3>
+                            <div class="course-card__meta">
+                                <span><i class="fas fa-clock"></i> 60h</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="course-card">
+                        <div class="course-card__image">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=225&fit=crop" alt="DevOps na Prática" loading="lazy">
+                            <div class="course-card__overlay">
+                                <button class="btn btn--play">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="course-card__content">
+                            <span class="course-card__category">DevOps</span>
+                            <h3 class="course-card__title">DevOps na Prática</h3>
+                            <div class="course-card__meta">
+                                <span><i class="fas fa-clock"></i> 38h</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <button class="carousel__btn carousel__btn--next" aria-label="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="section section--formations" id="formacoes">
+            <div class="section__header">
+                <h2 class="section__title">
+                    <i class="fas fa-route"></i>
+                    Trilhas de Formação
+                </h2>
+                <a href="#" class="section__link">
+                    Ver todas
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="carousel" id="carousel-formations">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel__track">
+                    <article class="formation-card">
+                        <div class="formation-card__header" style="--gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="formation-card__content">
+                            <h3 class="formation-card__title">Front-end Developer</h3>
+                            <p class="formation-card__description">HTML, CSS, JavaScript, React, TypeScript</p>
+                            <div class="formation-card__meta">
+                                <span><i class="fas fa-book"></i> 12 cursos</span>
+                                <span><i class="fas fa-clock"></i> 180h</span>
+                            </div>
+                            <div class="formation-card__progress">
+                                <div class="progress__bar" style="--progress: 0%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="formation-card">
+                        <div class="formation-card__header" style="--gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%)">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="formation-card__content">
+                            <h3 class="formation-card__title">Back-end Developer</h3>
+                            <p class="formation-card__description">Node.js, Python, Java, APIs REST, Databases</p>
+                            <div class="formation-card__meta">
+                                <span><i class="fas fa-book"></i> 15 cursos</span>
+                                <span><i class="fas fa-clock"></i> 220h</span>
+                            </div>
+                            <div class="formation-card__progress">
+                                <div class="progress__bar" style="--progress: 0%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="formation-card">
+                        <div class="formation-card__header" style="--gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="formation-card__content">
+                            <h3 class="formation-card__title">Mobile Developer</h3>
+                            <p class="formation-card__description">React Native, Flutter, iOS, Android</p>
+                            <div class="formation-card__meta">
+                                <span><i class="fas fa-book"></i> 10 cursos</span>
+                                <span><i class="fas fa-clock"></i> 150h</span>
+                            </div>
+                            <div class="formation-card__progress">
+                                <div class="progress__bar" style="--progress: 0%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="formation-card">
+                        <div class="formation-card__header" style="--gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="formation-card__content">
+                            <h3 class="formation-card__title">Data Scientist</h3>
+                            <p class="formation-card__description">Python, Machine Learning, Deep Learning, SQL</p>
+                            <div class="formation-card__meta">
+                                <span><i class="fas fa-book"></i> 18 cursos</span>
+                                <span><i class="fas fa-clock"></i> 280h</span>
+                            </div>
+                            <div class="formation-card__progress">
+                                <div class="progress__bar" style="--progress: 0%"></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="formation-card">
+                        <div class="formation-card__header" style="--gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%)">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="formation-card__content">
+                            <h3 class="formation-card__title">Cloud & DevOps</h3>
+                            <p class="formation-card__description">AWS, Docker, Kubernetes, CI/CD, Terraform</p>
+                            <div class="formation-card__meta">
+                                <span><i class="fas fa-book"></i> 14 cursos</span>
+                                <span><i class="fas fa-clock"></i> 200h</span>
+                            </div>
+                            <div class="formation-card__progress">
+                                <div class="progress__bar" style="--progress: 0%"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <button class="carousel__btn carousel__btn--next" aria-label="Próximo">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="section section--categories" id="categorias">
+            <div class="section__header">
+                <h2 class="section__title">
+                    <i class="fas fa-layer-group"></i>
+                    Explore por Categoria
+                </h2>
+            </div>
+            
+            <div class="categories-grid">
+                <a href="#" class="category-card" style="--accent: #667eea">
+                    <i class="fas fa-code"></i>
+                    <span>Programação</span>
+                    <small>120+ cursos</small>
+                </a>
+                <a href="#" class="category-card" style="--accent: #11998e">
+                    <i class="fas fa-database"></i>
+                    <span>Banco de Dados</span>
+                    <small>45+ cursos</small>
+                </a>
+                <a href="#" class="category-card" style="--accent: #f093fb">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Design</span>
+                    <small>80+ cursos</small>
+                </a>
+                <a href="#" class="category-card" style="--accent: #4facfe">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Science</span>
+                    <small>60+ cursos</small>
+                </a>
+                <a href="#" class="category-card" style="--accent: #fa709a">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Segurança</span>
+                    <small>35+ cursos</small>
+                </a>
+                <a href="#" class="category-card" style="--accent: #38ef7d">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Negócios</span>
+                    <small>50+ cursos</small>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta__content">
+                <h2 class="cta__title">Comece sua jornada de aprendizado hoje</h2>
+                <p class="cta__description">
+                    Acesso ilimitado a todos os cursos e formações. 
+                    Cancele quando quiser.
+                </p>
+                <div class="cta__actions">
+                    <a href="login.html" class="btn btn--large btn--accent">
+                        Começar gratuitamente
+                    </a>
+                    <span class="cta__note">7 dias grátis, depois R$49,90/mês</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo">
+                    <span class="logo__text">Edu</span><span class="logo__highlight">Flix</span>
+                </a>
+                <p class="footer__tagline">Transformando carreiras através da educação.</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <p>&copy; 2024 EduFlix. Todos os direitos reservados.</p>
+            <div class="footer__legal">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
