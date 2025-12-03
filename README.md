@@ -1,6 +1,6 @@
 # EduFlix - Plataforma de Cursos Online 🎓
 
-Plataforma moderna de educação online, transformando o conceito de streaming para o mundo dos cursos e formações.
+Plataforma de educação online, transformando o conceito de streaming para o mundo dos cursos e formações.
 
 ## 🚀 Acesso Rápido
 
@@ -63,8 +63,11 @@ eduflix/
 ## 🔐 Credenciais para Teste
 
 ```
-Email: ricardo@eduflix.com
-Senha: eduflix2024
+
+Email: admin
+Senha: admin 
+
+ou
 
 Email: aluno@eduflix.com
 Senha: aluno123
@@ -92,13 +95,16 @@ Totalmente responsivo com breakpoints para:
 
 ## 🚀 Como Executar
 
+### Localmente
 1. Navegue até a pasta `eduflix`
 2. Abra o arquivo `index.html` em qualquer navegador moderno
 3. Explore a plataforma e teste o login
 
+### Deploy no Netlify
+O projeto está configurado para deploy automático. O arquivo `netlify.toml` garante que o diretório correto seja publicado.
+
 ## 💡 Destaques Técnicos
 
-- **Sem jQuery**: JavaScript puro e moderno
 - **Classes ES6+**: Código orientado a objetos
 - **Intersection Observer**: Animações ao scroll
 - **LocalStorage**: Persistência de dados do usuário
@@ -119,5 +125,5 @@ Totalmente responsivo com breakpoints para:
 
 ---
 
-**Desenvolvido por Ricardo** | Transformando ideias em código limpo e funcional
+**Desenvolvido por Ricardo Araujo dos Santos** 
 
