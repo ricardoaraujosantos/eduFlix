@@ -4,7 +4,7 @@ Plataforma de educação online, transformando o conceito de streaming para o mu
 
 ## 🚀 Acesso Rápido
 
-Abra o arquivo `eduflix/index.html` no seu navegador.
+https://edu-flix.netlify.app/index.html
 
 ## 📚 Sobre o Projeto
 
